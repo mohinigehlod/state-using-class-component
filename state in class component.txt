@@ -1,0 +1,28 @@
+import React,{Component} from 'react';
+
+import './App.css';
+
+
+class App extends Component{
+ 
+  constructor(){
+    super()
+    this.state={data:1}
+  }
+  Apple(){
+     this.setState({data:this.state.data+1})
+  }
+   
+  render(){
+    return (
+      <div className="App">
+        <h1>{this.state.data}</h1>
+        <button onClick={()=>this.Apple()}>UPDATE DATA</button>
+      </div>
+    );
+  }
+  
+  
+}
+
+export default App;
